@@ -135,6 +135,7 @@ public class MainActivity extends Activity implements
      * Check that Google Play services is available
      */
     private boolean servicesConnected() {
+        Log.d(TAG, "Calling GooglePlayServicesUtil.isGooglePlayServicesAvailable(this)");
         int resultCode = GooglePlayServicesUtil.isGooglePlayServicesAvailable(this);
         // If Google Play services is available
         if (ConnectionResult.SUCCESS == resultCode) {
