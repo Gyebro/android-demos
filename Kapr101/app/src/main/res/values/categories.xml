@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 39 kategória -->
+    <string-array name="categories">
+        <item>Általában</item>
+        <item>Alak</item>
+        <item>Papír</item>
+        <item>Betű</item>
+        <item>Sorszélesség</item>
+        <item>Kizárás</item>
+        <item>Sorok ritkítása</item>
+        <item>Kiemelés</item>
+        <item>Címek</item>
+        <item>Szín</item>
+        <item>Behúzás</item>
+        <item>Szedéstükör</item>
+        <item>Oldalszámok</item>
+        <item>Élőfej</item>
+        <item>Tördelés</item>
+        <item>Szavak elválasztása</item>
+        <item>Lábjegyzetek</item>
+        <item>Széljegyzetek</item>
+        <item>Táblázatok</item>
+        <item>Illusztrációk</item>
+        <item>Címnegyedív</item>
+        <item>Szennycím</item>
+        <item>Főcím</item>
+        <item>Címkép</item>
+        <item>Copyright megjelölése</item>
+        <item>Tartalomjegyzék</item>
+        <item>Szövegkezdés</item>
+        <item>Függelék</item>
+        <item>Jegyzetek</item>
+        <item>Irodalomjegyzék</item>
+        <item>Név- és tárgymutató</item>
+        <item>Impresszum</item>
+        <item>Nyomtatás</item>
+        <item>Előzék</item>
+        <item>Könyvkötés</item>
+        <item>Gerinc</item>
+        <item>Első tábla</item>
+        <item>Védőborító</item>
+        <item>A könyv mint egész</item>
+    </string-array>
+</resources>

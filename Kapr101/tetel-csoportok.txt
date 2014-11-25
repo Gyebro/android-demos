@@ -1,0 +1,39 @@
+Általában	1-2
+Alak	3-5
+Papír	6-12
+Betű	13-17
+Sorszélesség	18-21
+Kizárás	22-24
+Sorok ritkítása	25
+Kiemelés	26-30
+Címek	31-34
+Szín	35
+Behúzás	36
+Szedéstükör	37-40
+Oldalszámok	41-42
+Élőfej	43-44
+Tördelés	45
+Szavak elválasztása	46-47
+Lábjegyzetek	48-49
+Széljegyzetek	50
+Táblázatok	51
+Illusztrációk	52-56
+Címnegyedív	57
+Szennycím	58
+Főcím	59-63
+Címkép	64-65
+Copyright megjelölése	66-67
+Tartalomjegyzék	68-71
+Szövegkezdés	72
+Függelék	73-74
+Jegyzetek	75
+Irodalomjegyzék	76
+Név- és tárgymutató	77-80
+Impresszum	81-82
+Nyomtatás	83
+Előzék	84-85
+Könyvkötés	86-92
+Gerinc	93-95
+Első tábla	96
+Védőborító	97-100
+A könyv mint egész	101
