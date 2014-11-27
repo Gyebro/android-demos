@@ -4,6 +4,6 @@
     <string name="app_name">101 tétel</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_theorem">TheoremActivity</string>
+    <string name="title_activity_theorem">Tételek</string>
 
 </resources>

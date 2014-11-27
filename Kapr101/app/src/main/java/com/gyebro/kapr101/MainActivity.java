@@ -1,11 +1,15 @@
 package com.gyebro.kapr101;
 
+import android.annotation.TargetApi;
 import android.app.ActivityOptions;
 import android.content.Intent;
+import android.os.Build;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
+import android.util.Pair;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -56,24 +60,34 @@ public class MainActivity extends ActionBarActivity implements CategoryAdapter.O
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
 
 
+    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     @Override
-    public void onCategoryItemClick(View caller) {
+    public void onCategoryItemClick(View caller, Pair<Integer, Integer> pair) {
         Intent intent = new Intent(this, TheoremActivity.class);
-        caller.findViewById(R.id.categoryText).setTransitionName("category_name");
         intent.putExtra("category_name",
                 ((TextView)caller.findViewById(R.id.categoryText)).getText().toString());
-        ActivityOptions options = ActivityOptions
-                .makeSceneTransitionAnimation(this, caller.findViewById(R.id.categoryText), "category_name");
-        startActivity(intent, options.toBundle());
+        intent.putExtra("first",pair.first);
+        intent.putExtra("last",pair.second);
+        //Log.d(TAG, "First "+pair.first+", last "+pair.second );
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            caller.findViewById(R.id.categoryText).setTransitionName("category_name");
+
+            ActivityOptions options = ActivityOptions
+                    .makeSceneTransitionAnimation(this, caller.findViewById(R.id.categoryText), "category_name");
+            startActivity(intent, options.toBundle());
+        } else {
+            // Regular startActivity
+            startActivity(intent);
+        }
     }
+
+
 }

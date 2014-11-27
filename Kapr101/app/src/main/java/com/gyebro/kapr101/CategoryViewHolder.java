@@ -1,6 +1,7 @@
 package com.gyebro.kapr101;
 
 import android.support.v7.widget.RecyclerView;
+import android.util.Pair;
 import android.view.View;
 import android.widget.TextView;
 
@@ -12,6 +13,7 @@ public class CategoryViewHolder extends RecyclerView.ViewHolder implements View.
     public TextView mCategoryName;
     public TextView mPagesText;
     public OnItemClick mListener;
+    public int first, last;
 
     public CategoryViewHolder(View layoutView, OnItemClick listener) {
         super(layoutView);
@@ -23,10 +25,10 @@ public class CategoryViewHolder extends RecyclerView.ViewHolder implements View.
 
     @Override
     public void onClick(View v) {
-        mListener.onItemClick(v);
+        mListener.onItemClick(v, new Pair<>(first,last));
     }
 
     public static interface OnItemClick {
-        public void onItemClick(View caller);
+        public void onItemClick(View caller, Pair<Integer, Integer> pair);
     }
 }

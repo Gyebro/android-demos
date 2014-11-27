@@ -4,7 +4,9 @@
     android:layout_height="match_parent" android:gravity="center_vertical"
     android:background="?android:attr/selectableItemBackground">
     <TextView
-        android:layout_margin="@dimen/category_item_margin"
+        android:layout_marginLeft="@dimen/category_item_margin"
+        android:layout_marginTop="@dimen/category_item_margin"
+        android:layout_marginBottom="@dimen/category_item_margin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
@@ -12,7 +14,9 @@
         android:id="@+id/categoryText" />
 
     <TextView
-        android:layout_margin="@dimen/category_item_margin"
+        android:layout_marginRight="@dimen/category_item_margin"
+        android:layout_marginTop="@dimen/category_item_margin"
+        android:layout_marginBottom="@dimen/category_item_margin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="right"

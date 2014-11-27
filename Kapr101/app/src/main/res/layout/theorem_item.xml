@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:gravity="center_vertical"
+    android:background="?android:attr/selectableItemBackground">
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/category_item_margin"
+        android:layout_marginRight="@dimen/category_item_margin"
+        android:visibility="visible"
+        android:background="@color/brownPrimary"/>
+    <TextView
+        android:layout_marginLeft="@dimen/category_item_margin"
+        android:layout_marginRight="@dimen/category_item_margin"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="40sp"
+        android:text="101"
+        android:id="@+id/theoremNumber"
+        android:textColor="@color/brownPrimaryDark"
+        android:typeface="serif" />
+
+    <TextView
+        android:layout_marginLeft="@dimen/category_item_margin"
+        android:layout_marginRight="@dimen/category_item_margin"
+        android:layout_marginBottom="@dimen/category_item_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Tétel szövege"
+        android:id="@+id/theoremText" />
+
+</LinearLayout>
