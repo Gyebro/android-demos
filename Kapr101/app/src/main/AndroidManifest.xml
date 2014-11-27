@@ -16,6 +16,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.gyebro.kapr101.TheoremActivity"
+            android:label="@string/title_activity_theorem"
+            android:parentActivityName="com.gyebro.kapr101.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.gyebro.kapr101.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

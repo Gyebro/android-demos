@@ -1,5 +1,7 @@
 package com.gyebro.kapr101;
 
+import android.app.ActivityOptions;
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -12,7 +14,9 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends ActionBarActivity implements CategoryAdapter.OnCategoryItemClick {
+
+    private static final String TAG = "MainActivity";
 
     private RecyclerView mRecyclerView;
     private RecyclerView.Adapter mAdapter;
@@ -34,7 +38,7 @@ public class MainActivity extends ActionBarActivity {
 
         // specify an adapter (see also next example)
         String[] categories = getResources().getStringArray(R.array.categories);
-        mAdapter = new CategoryAdapter(categories);
+        mAdapter = new CategoryAdapter(categories, this);
         mRecyclerView.setAdapter(mAdapter);
     }
 
@@ -62,4 +66,14 @@ public class MainActivity extends ActionBarActivity {
     }
 
 
+    @Override
+    public void onCategoryItemClick(View caller) {
+        Intent intent = new Intent(this, TheoremActivity.class);
+        caller.findViewById(R.id.categoryText).setTransitionName("category_name");
+        intent.putExtra("category_name",
+                ((TextView)caller.findViewById(R.id.categoryText)).getText().toString());
+        ActivityOptions options = ActivityOptions
+                .makeSceneTransitionAnimation(this, caller.findViewById(R.id.categoryText), "category_name");
+        startActivity(intent, options.toBundle());
+    }
 }
