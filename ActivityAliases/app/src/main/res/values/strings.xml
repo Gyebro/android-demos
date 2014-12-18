@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Amazing App</string>
+    <string name="favourites">Amazing Favourites</string>
+    <string name="topics">Amazing Topics</string>
+    <string name="messages">Amazing Messages</string>
+    <string name="friends">Amazing Friends</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="enable_alias0">Enable Favourites alias</string>
+    <string name="enable_alias1">Enable Topics alias</string>
+    <string name="enable_alias2">Enable Messages alias</string>
+    <string name="enable_alias3">Enable Friends alias</string>
+    <string name="preference_file_key">com.gyebro.activityaliases.PREFS</string>
+
+
+</resources>
